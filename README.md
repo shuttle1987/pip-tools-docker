@@ -11,3 +11,9 @@ Run this command
 ```bash
 $ docker build -t pip-tools .
 ```
+
+## Usage
+
+```
+docker run --rm -w /app -v $(pwd):/app pip-tools pip-compile requirements.in --output-file requirements-3.12.txt
+```
